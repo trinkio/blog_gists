@@ -1,3 +1,4 @@
+# The script filter for Fluentbit
 function add_meta(tag, timestamp, record)
     record["size"] = string.len(record["log"])
     record["timestamp"] = os.date('%Y-%m-%d %H:%M:%S')
